@@ -25,13 +25,17 @@ The project requires the following dependencies:
 
 These dependencies are used for data manipulation, model training, and evaluation.
 
-## Data Collection and Processing
-
-The sonar data is loaded into a pandas DataFrame and processed to prepare it for training.
+## Data Collection 
+- **Features**: The dataset comprises 60 numerical features 
+- **Target Variable**: The target variable is binary, with two classes:
+  - `R` (Rock)
+  - `M` (Mine)
 
 ## Training and Test Data
 
-The dataset is split into training and test sets using a 90-10 split. Stratified sampling is used to maintain the class distribution in both sets.
+The dataset is split into training and test sets using a 90-10 split.
+Stratified sampling is used to maintain the class distribution in both sets.
+
 
 ## Model Training
 
@@ -40,8 +44,10 @@ A Logistic Regression model is trained using the training data.
 ## Model Evaluation
 
 The accuracy of the model is evaluated using both the training and test data.
+- Accuracy on training data: 83.42%
+- Accuracy on test data: 76.19%
 
 ## Making Predictions
 
-The trained model is used to make predictions on new data. An example input is provided, and the model predicts whether the object is a rock or a mine.
+The trained model is used to make predictions on new data.The model predicts whether the object is a rock or a mine.
 
